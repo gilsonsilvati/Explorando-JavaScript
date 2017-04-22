@@ -1,0 +1,17 @@
+var percetualImposto = 0.15;
+valor = 100;
+var totalImposto = valor * percetualImposto;
+
+console.log('Total imposto a pagar:', totalImposto);
+
+var valor;
+
+// HOISTING:
+/*
+var percetualImposto, valor, totalImposto;
+percetualImposto = 0.15;
+valor = 100;
+totalImposto = valor * percetualImposto;
+
+console.log('Total imposto a pagar:', totalImposto);
+*/
