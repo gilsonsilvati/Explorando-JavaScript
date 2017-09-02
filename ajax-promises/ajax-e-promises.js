@@ -5,14 +5,16 @@ $(function() {
 		dataType: 'jsonp'
 	});
 
-	// Promises...
 	resposta.done(function(estados) {
+		var comboEstado = $('#combo-estado');
+		// comboEstado.empty();
+		comboEstado.html('<option>Selecione o estado</option>');
 		estados.forEach(function(estado) {
-			console.log(estado);
+			var optionEstado = $('<option>').val(estado.uf).text(estado.nome);
+			comboEstado.append(optionEstado);
 		});
 	});
 
-	// Promises...
 	resposta.fail(function(estados) {
 		alert('Erro carregando estados do servidor!');
 	});
