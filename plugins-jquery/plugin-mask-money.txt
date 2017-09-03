@@ -1,0 +1,5 @@
+https://github.com/plentz/jquery-maskmoney/
+
+http://plentz.github.io/jquery-maskmoney/
+
+https://igorescobar.github.io/jQuery-Mask-Plugin/
